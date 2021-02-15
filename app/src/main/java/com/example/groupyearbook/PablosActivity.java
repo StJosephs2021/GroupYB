@@ -12,4 +12,5 @@ public class PablosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pablitos);
 
     }
+
 }
