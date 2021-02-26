@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +21,9 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.google.com");
     }
-    public void switchNickActivity(View view){
-        Intent intent = new Intent(this, NickActivity.class);
-        startActivity(intent);
-    }
-    public void switchJohnActivity(View view){
-        Intent intent = new Intent(this, PablosActivity.class);
-        startActivity(intent);
+
+    public void buttonClick(View view) {
+        Intent i = new Intent(getApplicationContext(), NickActivity.class);
+        startActivity(i);
     }
 }
