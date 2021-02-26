@@ -29,7 +29,7 @@ public class NickActivity extends AppCompatActivity {
         setContentView(R.layout.activity_nickactivity);
     }
 
-    public void buttonClick(View view) {
+    public void buttonClick (View view) {
         Intent i = new Intent(getApplicationContext(), PablosActivity.class);
         startActivity(i);
     }
